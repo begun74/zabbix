@@ -47,7 +47,7 @@ pipeline {
 		}      
 		post {            
 			success {                
-				slackSend (channel: '#jenkins_news',color: '#00FF00', message: "SUCCESSFUL: Job '${env.JOB_NAME} [$docker-xwiki $versionXwiki]' (${env.BUILD_URL})")            
+				slackSend (channel: '#jenkins_news',color: '#00FF00', message: "SUCCESSFUL: Job '${env.JOB_NAME} [$docker-xwiki $versionZbx]' (${env.BUILD_URL})")            
 				
 				sh """
 				   export ${env.API_AUTH_HEADER}='bvv:11060553e483551f3cf0cf497f629b03c4'
@@ -55,7 +55,7 @@ pipeline {
 				"""
 			}            
 			failure {                
-				slackSend (channel: '#jenkins_news',color: '#FF0000', message: "FAILED: Job '${env.JOB_NAME} [$docker-xwiki $versionXwiki]' (${env.BUILD_URL})")            
+				slackSend (channel: '#jenkins_news',color: '#FF0000', message: "FAILED: Job '${env.JOB_NAME} [$docker-xwiki $versionZbx]' (${env.BUILD_URL})")            
 			}        
 		}
 }
