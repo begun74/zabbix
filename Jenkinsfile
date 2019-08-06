@@ -15,7 +15,7 @@ pipeline {
 			stage('Cloning Git zabbix') {      
 				steps {         
 					sh "rm -rf *"        
-					git branch: '$versionZbx' , url: 'git@github.com:begun74/zabbix.git'        
+					git branch: 'release/4.2' , url: 'git@github.com:begun74/zabbix.git'        
 					//git git@github.com:begun74/zabbix.git'      
 				}    
 			}    
