@@ -6,7 +6,7 @@ pipeline {
 			versionZbx = "release/4.2"
 			registryZbx = "begun74/zabbix-project:v$versionZbx"        
 			registryCredential = 'dockerhub'        
-			DB_HOST = "mysql-zbx"    
+			DB_HOST = "mysql-zabbix"    
 			DB_USER = "zabbix"    
 			DB_PASS = "zabbix"    
 			DB_NAME = "zabbix"  
