@@ -41,7 +41,7 @@ pipeline {
 			stage('Remove Unused docker image  zabbix') {      
 				steps{                
 					//sh "docker rmi $registryZbx"        
-					//sh "docker images"      
+					sh "docker images"      
 				}    
 			}  
 		}      
